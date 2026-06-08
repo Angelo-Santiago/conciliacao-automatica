@@ -224,8 +224,8 @@ export default function App() {
   const [xlsxReady, setXlsxReady] = useState(false);
   const [pdfReady,  setPdfReady]  = useState(false);
 
-  const cpjFileRef = useRef();
-  const extFileRef = useRef();
+  const cpjFileRef = useRef<HTMLInputElement>(null);
+  const extFileRef = useRef<HTMLInputElement>(null);
 
   /* ── carregar libs externas ── */
   useEffect(() => {
